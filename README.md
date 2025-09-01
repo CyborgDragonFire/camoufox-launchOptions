@@ -1,0 +1,1 @@
+# camoufox-launch-options

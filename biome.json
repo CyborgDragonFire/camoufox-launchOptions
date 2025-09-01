@@ -1,0 +1,82 @@
+{
+    "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+    "files": {
+        "includes": ["src/*.ts", "*.ts", "*.json"]
+    },
+    "formatter": {
+        "indentStyle": "space",
+        "indentWidth": 4,
+        "lineWidth": 120
+    },
+    "linter": {
+        "rules": {
+            "recommended": true,
+            "a11y": {
+                "recommended": true
+            },
+            "complexity": {
+                "recommended": true,
+                "noVoid": "error",
+                "noImportantStyles": "error",
+                "noImplicitCoercions": "warn",
+                "useSimplifiedLogicExpression": "info",
+                "noExcessiveCognitiveComplexity": {
+                    "level": "info",
+                    "options": {
+                        "maxAllowedComplexity": 20
+                    }
+                }
+            },
+            "correctness": {
+                "recommended": true,
+                "noUndeclaredVariables": "error",
+                "noUndeclaredDependencies": "error",
+                "noPrivateImports": "warn"
+            },
+            "performance": {
+                "recommended": true,
+                "noNamespaceImport": "error",
+                "noDelete": "warn"
+            },
+            "security": {
+                "recommended": true
+            },
+            "style": {
+                "recommended": true,
+                "noCommonJs": "error",
+                "noEnum": "error",
+                "noValueAtRule": "error",
+                "noYodaExpression": "warn",
+                "useExplicitLengthCheck": "warn",
+                "useForOf": "warn",
+                "noSubstr": "warn",
+                "noUselessElse": "info",
+                "noMagicNumbers": "info"
+            },
+            "suspicious": {
+                "recommended": true,
+                "useStrictMode": "error",
+                "noAlert": "error",
+                "noVar": "error",
+                "useAwait": "error",
+                "noEmptyBlockStatements": "warn",
+                "noUnassignedVariables": "warn",
+                "noUselessEscapeInString": "warn",
+                "noBitwiseOperators": "info"
+            },
+            "nursery": {
+                "useSortedClasses": "warn"
+            }
+        }
+    },
+    "assist": {
+        "actions": {
+            "source": {
+                "organizeImports": "on",
+                "useSortedAttributes": "on",
+                "useSortedKeys": "off",
+                "useSortedProperties": "on"
+            }
+        }
+    }
+}
