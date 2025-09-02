@@ -2,7 +2,7 @@
     "name": "camoufox-launch-options",
     "description": "Lightweight camoufox-js alternative that exports 'launchOptions' only, Intended to be used with Playwright",
     "private": false,
-    "version": "0.1.0",
+    "version": "0.2.0",
     "license": "MPL-2.0",
     "type": "module",
     "types": "./index.d.ts",
