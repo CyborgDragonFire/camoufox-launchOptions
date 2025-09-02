@@ -11,7 +11,6 @@ export default defineConfig({
         sourcemap: true,
         resolve: ["playwright-core", "zod/v4/mini", /^@types\//],
     },
-    copy: ["./README.md", "./LICENSE", "./package.json"],
     nodeProtocol: true,
     shims: false,
     hash: true,
