@@ -5,11 +5,10 @@
     "version": "0.0.0",
     "license": "MPL-2.0",
     "type": "module",
-    "main": "./dist/index.js",
-    "module": "./dist/index.js",
-    "types": "./dist/index.d.ts",
+    "types": "./index.d.ts",
     "exports": {
-        ".": "./dist/index.js",
+        ".": "./index.js",
+        ".camoufoxLaunchOptions": "./index.js",
         "./package.json": "./package.json"
     },
     "engines": {

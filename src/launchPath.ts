@@ -11,6 +11,7 @@ const nodePlatform = z
 if (!nodePlatform.success) {
     throw new Error(z.prettifyError(nodePlatform.error));
 }
+
 const osName = nodePlatform.data;
 
 function getDefaultInstallDirectory() {
